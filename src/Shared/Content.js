@@ -13,13 +13,3 @@ const Content = (props) => {
 }
 
 export default Content;
-// export default function(props) {
-//     return <AppContext.Consumer>
-//         {({coinList}) => {
-//             if(!coinList){
-//                 return <div> Loading Coins </div>
-//             }
-//             return <div>{props.children}</div>
-//         }}
-//     </AppContext.Consumer>
-// };
