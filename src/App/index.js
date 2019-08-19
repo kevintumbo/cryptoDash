@@ -2,15 +2,14 @@ import React from 'react';
 import './App.css';
 import AppLayout from './AppLayout';
 import AppBar from './AppBar';
-import Welcome from './WelcomeMessage';
 import {AppProvider} from './AppProvider';
-
+import Settings from '../Settings';
 function App() {
   return (
     <AppLayout>
       <AppProvider>
         <AppBar />
-        <Welcome name="CryptoDash" />
+        <Settings  />
       </AppProvider> 
     </AppLayout>
   );
