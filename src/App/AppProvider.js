@@ -11,7 +11,8 @@ export class AppProvider extends React.Component {
       page: 'settings',
       ...this.savedSettings(),
       setPage: this.setPage,
-      confirmFavorites: this.confirmFavorites
+      confirmFavorites: this.confirmFavorites,
+      fetchCoins: this.fetchCoins
     }
   }
 
@@ -20,7 +21,8 @@ export class AppProvider extends React.Component {
   }
 
   fetchCoins = async () => {
-    let coinList = (await cc.coinList().Data);
+    let coinList = await cc.coinList();
+    coinList = coinList.Data;
     this.setState({coinList});
     console.log(coinList);
   }

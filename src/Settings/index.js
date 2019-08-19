@@ -4,7 +4,7 @@ import ConfirmButton from './ConfirmButton';
 import Page from '../Shared/Page';
 
 export default function() {
-    return <Page name='settings'> 
+    return <Page name="settings">
         <WelcomeMessage name="CryptoDash"/>
         <ConfirmButton />
     </Page> 
